@@ -22,4 +22,7 @@ permissions:
 jobs:
   puppet:
     name: Puppet
-    uses: voxpupuli/gha-puppet/.github/workflows/beaker.yml@v4
+    uses: TheMeier/gha-puppet/.github/workflows/basic.yml@arc
+    with:
+      unit_runs_on: 'runnerset-themeier'
+      additional_packages: 'build-essential ruby-dev'
